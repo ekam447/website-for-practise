@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="Eng">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "device width", intial-scale="1.0">
+<head><title>Create profile</title> </head>
+<!-- This line connects your CSS file -->
+ <link rel="stylesheet" href="style.css">
+<body>
+    <!-- this container wraps everything so we can center it later-->
+    <div class="container">
+
+    <h1 id="heading">Sign up</h1>
+    <form>
+          <!-- Name-Input-->
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter username">
+
+          <!-- Email-Input-->
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter email">
+
+          <!-- Password-Input -->
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="choose password">
+           
+          <!-- Confirm password-Input-->
+           <label for="confirm password">Confirm password:</label>
+           <input type="password" id="confirm" placeholder="confirm password">
+
+           <!-- Create profile-->
+            <button type="submit">Create profile</button><div></div>
+    </form>
+    <div id="profileCard" style="display: none;">
+          <h2>Welcome, <span id="displayName"></span></h2>
+          <p>Your prfile has been created successfully</p>
+          <p>Email: <spin id="displayEmail"></spin></p>
+          <button id="logoutbtn" style="margin-top: 20px; background-color: #dc3545">Sign out</button>
+    </div>
+    <div id="message"></div>
+    </div><!--this container close here, after the form -->
+    <script src="script.js"></script>
+</body>    
+</html>

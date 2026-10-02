@@ -1,0 +1,51 @@
+body {
+    background-image: url('background.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    font-family: arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 254, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0.1 4px 8px rgba(0,0,0,0);
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
