@@ -50,18 +50,6 @@ if (savedName) {
     heading.style.display = "none";
 }
 
-document.querySelector("#logoutbtn").addEventListener("click", function() {
-    localStorage.removeItem("username");
-    localStorage.removeItem("useremail");
-    profileCard.style.display = "none";
-    form.style.display = "block";
-    form.reset();
-    messagebox.style.display = "block";
-    messagebox.textContent = "Your are has been logged out.";
-    messagebox.style.color = "blue";
-
-});
-
 const savedUser = localStorage.getItem("username");
 
 if (savedUser) {
@@ -77,4 +65,18 @@ if (logoutBtn) {
         localStorage.clear();
         location.reload();
     });
+}
+
+const deleteBtn = document.querySelector("#deleteBtn");
+
+if (deleteBtn) {
+    deleteBtn.addEventListener("click", function () {
+        const userConfirmed = confirm("Are you sure you want to delete your account? this is cannot be undone.");
+        
+        if (userConfirmed) {
+           localStorage.clear();
+           location.reload();
+        }
+    });
+    
 }
